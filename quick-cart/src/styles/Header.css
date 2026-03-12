@@ -1,0 +1,81 @@
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.header-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2rem;
+  }
+  
+  .header-subtitle {
+    font-size: 1rem;
+  }
+}
+
+.header-content {
+  /* TODO: Use flexbox to position title and cart icon */
+  /* display: flex; justify-content: space-between; align-items: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-icon-btn {
+  position: relative;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.2s ease;
+}
+
+.cart-icon-btn:hover {
+  transform: scale(1.1);
+}
+
+.cart-badge {
+  /* TODO: Style the badge */
+  /* Position absolute - top right of button */
+  /* Small circle with number */
+  /* Bright color background */
+  /* Example:
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ff4757;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  */
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ff4757;
+  color:white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
